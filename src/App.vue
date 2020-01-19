@@ -1,29 +1,27 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  components: {
-    HelloWorld
-  }
+  components: {}
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="less">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import '../src/style/base/import.all.less';
+
+.mx_reset();
+
+.app {
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(ellipse at 50% 10%, #acc8b4 30%, #5b816e);
+  min-height: 736px;
 }
 </style>
