@@ -41,5 +41,4 @@ const Obj = {
     }
   }
 }
-Obj.install = Vue => {}
 export default Obj
