@@ -1,6 +1,6 @@
-# vue-base-template
+# vue-base-template-ts
 
-Vue 基础插件&组件
+Vue 基础插件&组件的ts版本
 
 ## 如何同步基础框架？
 我们基于一份基础模版，通过git来设置不同的remote来关联模版与项目的关系，模版有更新时候项目可以git pull下来。
@@ -15,6 +15,7 @@ git remote set-url origin your-git-oa-ssh-url
 # 新增远程仓库base地址作为项目的基础模版地址
 git remote add base git@github.com:ManfredHu/vue-base-template-ts.git
 # 把代码推动到origin的develop分支
+git checkout -b dev
 git push -u origin dev
 # 切换到master推送
 git checkout master
