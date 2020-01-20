@@ -18,7 +18,7 @@ export default class App extends Vue {}
 
 .mx_reset();
 
-.app {
+#app {
   height: 100%;
   width: 100%;
   background-image: radial-gradient(ellipse at 50% 10%, #acc8b4 30%, #5b816e);
