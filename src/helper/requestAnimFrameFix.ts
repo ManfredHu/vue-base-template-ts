@@ -15,5 +15,15 @@ function requestAnimFrameFix() {
       }
     )
   })()
+  window.cancelAnimFrame = (function () {
+    return (window.cancelAnimationFrame ||
+      window.webkitCacelAnimationFrame ||
+      window.mozCacelAnimationFrame ||
+      window.oCacelAnimationFrame ||
+      window.msCacelAnimationFrame ||
+      function _cacelAnimFrame(id) {
+        window.clearTimeout(id)
+      })
+  })()
 }
 export default requestAnimFrameFix
