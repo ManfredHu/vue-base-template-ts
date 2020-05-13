@@ -19,3 +19,10 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+// https://seminelee.github.io/2016/08/29/bfcache/
+window.addEventListener('pageshow', function (e) {
+  if (e.persisted) {
+    window.location.reload()
+  }
+})
